@@ -1,0 +1,29 @@
+{
+  "name": "semver-compare-lite",
+  "version": "0.1.0",
+  "description": "A tiny semantic version compare library for JavaScript.",
+  "main": "./index",
+  "files": [
+    "dist",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "node test",
+    "build": "npm run build:cjs",
+    "build:cjs": "node ./node_modules/typescript/bin/tsc --module commonjs --target es5 -outDir dist"
+  },
+  "keywords": [
+    "semver compare",
+    "compare version"
+  ],
+  "author": "rerurn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reruin/semver-compare-lite.git"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
